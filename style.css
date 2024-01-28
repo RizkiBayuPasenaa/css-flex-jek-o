@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary--: #c7ad00;
+    --secondary--: #FFA33C;
+    --third--:#6135d9;
+    --bg-white--: #e7e7e7;
+    --bg--color: #0d131a;
+    --text-color:rgb(255, 255, 255);
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 2000px;
+    background-color: var(--bg-white--);
+}
+
+nav {
+    background-color: var(--bg--color);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 5%;
+    display: flex;
+}
+
+.menu {
+    margin-right: 5%;
+    display: flex;
+}
+
+.logo img {
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.menu ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    border-bottom: 2px solid var(--text-color);
+}
+
+/* Main content */
+
+main {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(13, 13, 13);
+}
+
+.main-caption {
+    margin-left: 5%;
+}
+
+.main-caption h1 {
+    color: var(--text-color);
+}
+
+.main-caption button {
+    color: var(--text-color);
+    margin-top: 20px;
+    background-color: var(--primary--);
+    font-size: 16px;
+    font-family: "Poppins" , sans-serif;
+    font-weight: 600;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+}
+
+/* Section Pengenalan */
+
+.pengenalan h1 {
+    width: 500px;
+    margin-left: 5%;
+}
+
+.container-card {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 300px;
+    text-align: center;
+}
+
+.kotak {
+    background-color: var(--bg--color);
+    margin-top: -50px;
+    color: var(--bg-white--);
+    border-radius: 50px 50px 50px 50px;
+    height: 300px;
+}
+
+.kotak h3 {
+    padding-top: 50px;
+}
+
+.kotak p {
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    word-spacing: normal;
+}
